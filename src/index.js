@@ -1,15 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
+import Nav from "./components/nav"
+import Masthead from "./components/masthead"
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Nav />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("mainNav")
 );
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Masthead />
+  </React.StrictMode>,
+  document.getElementById("masthead")
+)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
