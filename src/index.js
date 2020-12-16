@@ -5,6 +5,8 @@ import Nav from "./components/nav"
 import Masthead from "./components/masthead"
 import About from "./components/about"
 import Projects from "./components/projects"
+import Contact from "./components/contact"
+import Footer from "./components/footer"
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
@@ -33,7 +35,22 @@ ReactDOM.render(
     <Projects />
   </React.StrictMode>,
   document.getElementById("projects")
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Contact/>
+  </React.StrictMode>,
+  document.getElementById("contact")
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Footer/>
+  </React.StrictMode>,
+  document.getElementById("footer")
 )
+
 
 
 
